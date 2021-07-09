@@ -21,7 +21,7 @@ const Nav = () => {
                 </Link>
                 <div className={ mobile ? "menu" : "menu menu-open"}>
                     <ul>
-                        <Link to='/about'><li>Our Company</li></Link>
+                        <li><Link to='/about'>Our Company</Link></li>
                         <li><Link to='/locations'>Locations</Link></li>
                         <li><Link to='/contact'>Contact</Link></li>
                     </ul>
