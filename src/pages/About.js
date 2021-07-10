@@ -1,5 +1,9 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../style/about.css'
+import illustrationAustralia from '../shared/desktop/illustrationAustralia.svg';
+import illustrationCanada from '../shared/desktop/illustrationCanada.svg';
+import illustrationUnitedKingdom from '../shared/desktop/illustrationUnitedKingdom.svg'
 
 const About = () => {
     return (
@@ -22,6 +26,35 @@ const About = () => {
                     </div>
                 </div>
                 <div className="talent-img"></div>
+            </div>
+            <div className="locations">
+                <div className="canada">
+                    <img className="lacation-img" src={illustrationCanada} alt="" /> <br />
+                    <div className="loc-head">Canada</div>
+                    <button className="see-loc"><Link to="/locations">SEE LOCATIONS</Link></button>
+                </div>
+                <div className="australia">
+                    <img className="lacation-img" src={illustrationAustralia} alt="" /> <br />
+                    <div className="loc-head">Australia</div>
+                    <button className="see-loc"><Link to="/locations">SEE LOCATIONS</Link></button>
+                </div>
+                <div className="united-kingdom">
+                    <img className="lacation-img" src={illustrationUnitedKingdom} alt="" /><br />
+                    <div className="loc-head">United Kingdom</div>
+                    <button className="see-loc"><Link to="/locations">SEE LOCATIONS</Link></button>
+                </div>
+            </div>
+            <div className="real-deal-section">
+                <div className="real-text">
+                    <div className="real-head">
+                        The real deal
+                    </div>
+                    <div className="real-info">
+                        As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success. <br /><br />
+                        We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, we inspire audiences to take action and drive real results.
+                    </div>
+                </div>
+                <div className="real-img"></div>
             </div>
         </div>
     )

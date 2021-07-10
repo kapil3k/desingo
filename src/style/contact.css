@@ -1,0 +1,14 @@
+.contact {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: 3vh;
+}
+.text-cont {
+  width: 50%;
+  height: 640px;
+}
+.cont-info {
+  width: 50%;
+}
