@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import "../style/locations.css";
+import logoLight from '../shared/desktop/logoLight.png'
+
 
 const Locations = () => {
     return (
@@ -8,7 +11,7 @@ const Locations = () => {
                 <div className="loc-can">
                     <div className="loc-text">
                         <div className="head-loc">Canada</div>
-                        <div className="cont-info">
+                        <div className="cont-info-loc">
                             <div className="addr">
                                 <p className="bold-black">Designo Central Office</p>
                                 <p className="black">3886 Wellington Street</p>
@@ -26,7 +29,7 @@ const Locations = () => {
                 <div className="loc-aus">
                 <div className="loc-text">
                         <div className="head-loc">Australia</div>
-                        <div className="cont-info">
+                        <div className="cont-info-loc">
                             <div className="addr">
                                 <p className="bold-black">Designo AU Office</p>
                                 <p className="black">19 Balonne Street</p>
@@ -44,7 +47,7 @@ const Locations = () => {
                 <div className="loc-uk">
                 <div className="loc-text">
                         <div className="head-loc">United Kingdom</div>
-                        <div className="cont-info">
+                        <div className="cont-info-loc">
                             <div className="addr">
                                 <p className="bold-black">Designo Office UK</p>
                                 <p className="black">13  Colorado Way</p>
@@ -58,6 +61,44 @@ const Locations = () => {
                         </div>
                     </div>
                     <div className="uk-img"></div>
+                </div>
+            </div>
+            <div className="talk-about">
+                <div>
+                    <p className="lets-talk">Let’s talk about your project</p>
+                    <p className="ready">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
+                </div>
+                <button className="touch"><Link to='/contact'>GET IN TOUCH</Link></button>
+            </div>
+            <div className="footer">
+                <div className="foot-menu">
+                    <div className="foot-logo"><img src={logoLight} alt="" /></div>
+                    <div className="foot-tab">
+                        <ul>
+                            <li><Link to='/about'>Our Company</Link></li>
+                            <li><Link to='/locations'>Locations</Link></li>
+                            <li><Link to='/contact'>Contact</Link></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="foot-cont">
+                    <div className="foot-add">
+                        Designo Central Office <br />
+                        3886 Wellington Street <br />
+                        Toronto, Ontario M9C 3J5
+                    </div>
+                    <div className="foot-phone-no">
+                        Contact Us (Central Office) <br />
+                        P : +1 253-863-8967 <br />
+                        M : contact@designo.co <br />
+                    </div>
+                    <div className="foot-social-media">
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-instagram"></i>
+                    </div>
                 </div>
             </div>
         </div>

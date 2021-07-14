@@ -46,7 +46,7 @@
   /* font-weight: normal; */
   text-align: left;
 }
-.cont-info {
+.cont-info-loc {
   display: flex;
   width: 60%;
   justify-content: space-between;
@@ -74,4 +74,57 @@
 }
 .black {
   font-weight: normal;
+}
+@media screen and (max-width: 769px) {
+  .locations {
+    width: 90vw;
+    margin-bottom: 50px;
+  }
+  .loc-can,
+  .loc-uk {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+  .loc-aus {
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+  }
+  .loc-text {
+    width: 100%;
+    padding: 0 10vw;
+    border-radius: 0;
+  }
+  .head-loc {
+    text-align: center;
+    font-size: 35px;
+  }
+  .cont-info-loc {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .addr {
+    margin: auto;
+    font-size: 15px;
+  }
+  .cont {
+    margin: auto;
+    font-size: 15px;
+  }
+  .can-img,
+  .aus-img,
+  .uk-img {
+    height: 310px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .addr p {
+    text-align: center;
+  }
+  .cont p {
+    text-align: center;
+  }
 }

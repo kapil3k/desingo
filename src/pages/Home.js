@@ -1,9 +1,11 @@
 import React from 'react'
 import '../style/home.css'
+import { Link } from 'react-router-dom'
 import imageHeroPhone from '../home/imageHerophone.png'
 import illustrationPassionate from "../home/illustrationPassionate.svg"
 import illustrationFriendly from "../home/illustrationFriendly.svg"
 import illustrationResourceful from "../home/illustrationResourceful.svg"
+import logoLight from '../shared/desktop/logoLight.png'
 
 
 const Home = () => {
@@ -58,7 +60,38 @@ const Home = () => {
                     <p className="lets-talk">Let’s talk about your project</p>
                     <p className="ready">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
                 </div>
-                <button className="touch">GET IN TOUCH</button>
+                <button className="touch"><Link to='/contact'>GET IN TOUCH</Link></button>
+            </div>
+            <div className="footer">
+                <div className="foot-menu">
+                    <div className="foot-logo"><img src={logoLight} alt="" /></div>
+                    <div className="foot-tab">
+                        <ul>
+                            <li><Link to='/about'>Our Company</Link></li>
+                            <li><Link to='/locations'>Locations</Link></li>
+                            <li><Link to='/contact'>Contact</Link></li>
+                        </ul>
+                    </div>
+                </div>
+                <div className="foot-cont">
+                    <div className="foot-add">
+                        Designo Central Office <br />
+                        3886 Wellington Street <br />
+                        Toronto, Ontario M9C 3J5
+                    </div>
+                    <div className="foot-phone-no">
+                        Contact Us (Central Office) <br />
+                        P : +1 253-863-8967 <br />
+                        M : contact@designo.co <br />
+                    </div>
+                    <div className="foot-social-media">
+                    <i class="fa fa-facebook-official"></i>
+                    <i class="fa fa-youtube-play"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-pinterest"></i>
+                    <i class="fa fa-instagram"></i>
+                    </div>
+                </div>
             </div>
         </div>
     )

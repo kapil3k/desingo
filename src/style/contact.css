@@ -4,11 +4,74 @@
   display: flex;
   margin: auto;
   margin-top: 3vh;
+  background-color: #e7816b;
+  border-radius: 20px;
 }
 .text-cont {
   width: 50%;
-  height: 640px;
+  height: 550px;
+  background: url("../home/bg-pattern-hero-home.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 0 150px;
+  box-sizing: border-box;
+}
+.text-cont h1 {
+  padding: 0;
+}
+.text-cont h5 {
+  font-size: 18px;
 }
 .cont-info {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.off-add {
+  color: white;
+  font-weight: 600;
+}
+.off-add-head {
+  font-size: 40px;
+}
+.off-con {
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+}
+.off-con-head {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    width: 90vw;
+    height: auto;
+    flex-direction: column;
+  }
+  .text-cont {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10vw;
+    text-align: center;
+  }
+  .text-cont h1 {
+    font-size: 35px;
+  }
+  .cont-info {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .off-con {
+    margin: 50px 0;
+  }
 }
