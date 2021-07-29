@@ -21,9 +21,9 @@ const Nav = () => {
                 </Link>
                 <div className={ mobile ? "menu" : "menu menu-open"}>
                     <ul>
-                        <li><Link to='/about'>Our Company</Link></li>
-                        <li><Link to='/locations'>Locations</Link></li>
-                        <li><Link to='/contact'>Contact</Link></li>
+                        <li><Link to='/about' onClick={()=> setMobile(!mobile)}>Our Company</Link></li>
+                        <li><Link to='/locations' onClick={()=> setMobile(!mobile)}>Locations</Link></li>
+                        <li><Link to='/contact' onClick={()=> setMobile(!mobile)}>Contact</Link></li>
                     </ul>
                 </div>
             </div>
