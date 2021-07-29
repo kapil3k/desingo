@@ -88,11 +88,11 @@ const About = () => {
                         M : contact@designo.co <br />
                     </div>
                     <div className="foot-social-media">
-                    <i class="fa fa-facebook-official"></i>
-                    <i class="fa fa-youtube-play"></i>
-                    <i class="fa fa-twitter"></i>
-                    <i class="fa fa-pinterest"></i>
-                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-facebook-official" onClick={()=>window.location.href = 'https://facebook.com'}></i>
+                    <i class="fa fa-youtube-play" onClick={()=>window.location.href = 'https://youtube.com'}></i>
+                    <i class="fa fa-twitter" onClick={()=>window.location.href = 'https://twitter.com'}></i>
+                    <i class="fa fa-pinterest" onClick={()=>window.location.href = 'https://pinterest.com'}></i>
+                    <i class="fa fa-instagram" onClick={()=>window.location.href = 'https://instagram.com'}></i>
                     </div>
                 </div>
             </div>
