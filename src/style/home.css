@@ -439,4 +439,7 @@ p {
     margin-bottom: 25px;
     margin-top: 35px;
   }
+  .learn a {
+    color: black;
+  }
 }
