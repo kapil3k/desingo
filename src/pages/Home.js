@@ -15,7 +15,7 @@ const Home = () => {
                 <div className="text">
                 <h1>Award-winning custom designs and digital branding solutions</h1> 
                 <h3>With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</h3>
-                <button className="learn">Learn More</button>
+                <button className="learn"><Link to="/locations">Learn More</Link></button>
                 </div>
                 <div className="mobile">
                     <div className="smartphone">
